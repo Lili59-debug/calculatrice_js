@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculatrice d'Aurélie</title>
+    <link rel="icon" href="img/favicon.PNG" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">JavaScript - Calculatrice</h1>
+    </header>
+    <main>
+        <div class="calculatrice">
+            <div class="zero text-right text-white pt-4 pb-4 pr-3">
+                <h2 id="resultat">0</h2>
+            </div>
+            <div class="core">
+                <div class="ligne">
+                    <button class="dot" value="7" onclick="affichage(this)">7</button>
+                    <button class="dot" value="8" onclick="affichage(this)">8</button>
+                    <button class="dot" value="9" onclick="affichage(this)">9</button>
+                    <button class="dot" value="/" onclick="affichage(this)">/</button>
+                </div>
+                <div class="ligne">
+                    <button class="dot" value="4" onclick="affichage(this)">4</button>
+                    <button class="dot" value="5" onclick="affichage(this)">5</button>
+                    <button class="dot" value="6" onclick="affichage(this)">6</button>
+                    <button class="dot dot-rose" value="*" onclick="affichage(this)">*</button>
+                </div>
+                <div class="ligne">
+                    <button class="dot" value="1" onclick="affichage(this)">1</button>
+                    <button class="dot" value="2" onclick="affichage(this)">2</button>
+                    <button class="dot" value="3" onclick="affichage(this)">3</button>
+                    <button class="dot dot-rose" value="-" onclick="affichage(this)">-</button>
+                </div>
+                <div class="ligne">
+                    <button class="dot" value="0" onclick="affichage(this)">0</button>
+                    <button class="dot" value="." onclick="affichage(this)">.</button>
+                    <button class="dot dot-rouge" value="=" onclick="calcule(this)">=</button>
+                    <button class="dot dot-rose" value="+" onclick="affichage(this)">+</button>
+                </div>
+                <div class="ligne justify-content-center">
+                    <button class="dot dot-pourpre" value="ac" onclick="efface(this)">ac</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

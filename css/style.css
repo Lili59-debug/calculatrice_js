@@ -1,0 +1,75 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2rem;
+}
+
+.calculatrice {
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 25% 25% / 35% 35% 15% 15%;
+    box-shadow: 0.2em 0 1em #555;
+}
+
+.zero {
+    background-color: red;
+    border-radius: 15% 15% / 35% 35% 0% 0%;
+    padding: 5%;
+    
+}
+
+.core {
+    background-color: white;
+    border-radius: 15% 15% / 0% 0% 15% 15%;
+    padding: 5%;
+}
+
+h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+}
+
+.dot {
+    background-color: #DCDCDC;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0.2em;
+    text-align: center;
+    max-width: 60px;
+}
+
+.dot-rose {
+    background-color: #F08080;
+    color:white;
+}
+
+.dot-rouge {
+    background-color: red;
+    color:white;
+}
+
+.dot-pourpre {
+    background-color: #8B0000;
+    color:white;
+}
+
+.dot:hover {
+    background-color: #582900;
+    color: white;
+    cursor: pointer;
+}
